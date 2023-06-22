@@ -12,5 +12,7 @@ namespace Nowadays.Api.Entities
         public string LastName { get; set; }
         public string Email { get; set; }
         public string NationalyId { get; set; }
+        public List<Duty> Duties { get; set; }
+        public List<Project> Projects { get; set; }
     }
 }
