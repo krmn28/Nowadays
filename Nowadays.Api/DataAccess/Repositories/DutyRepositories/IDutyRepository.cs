@@ -6,12 +6,8 @@ using Nowadays.Api.Entities;
 
 namespace Nowadays.Api.DataAccess.Repositories.DutyRepositories
 {
-    public class DutyRepository:Repository<Duty>, IDutyRepository
+    public interface IDutyRepository:IRepository<Duty>
     {
-        public DutyRepository(NowadaysDbContext context) : base(context)
-        {
-            
-        }
+        
     }
-    
 }

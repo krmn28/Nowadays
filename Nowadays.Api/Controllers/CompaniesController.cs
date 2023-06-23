@@ -2,8 +2,12 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Nowadays.Api.Application.Commands.Companies;
+using Nowadays.Api.Application.Queries.Companies;
 using Nowadays.Api.DataAccess.Repositories;
 using Nowadays.Api.DataAccess.Repositories.CompanyRepositories;
 using Nowadays.Api.Entities;
@@ -15,32 +19,24 @@ namespace Nowadays.Api.Controllers
     [Route("api/[controller]")]
     public class CompaniesController : ControllerBase
     {
-         private readonly ICompanyRepository _companyRepository;
-         private readonly IUnitOfWork _unitOfWork;
+         private readonly IMediator _mediator;
 
-        public CompaniesController(ICompanyRepository companyRepository, IUnitOfWork unitOfWork)
+        public CompaniesController(IMediator mediator)
         {
-            _companyRepository = companyRepository;
-            _unitOfWork = unitOfWork;
+            _mediator = mediator;
         }
 
         [HttpPost]
-        public async Task<IActionResult> AddCompany(CreateCompanyViewModel viewModel)
+        public async Task<IActionResult> AddCompany(CreateCompanyCommandRequest request)
         {
-             Company company = new()
-             {
-                Name = viewModel.Name,
-                Description = viewModel.Description
-             };
-            var result = await _companyRepository.AddAsync(company);
-            await _unitOfWork.SaveAsync();
+            var result = await _mediator.Send(request);
             return Ok(result);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll([FromQuery] GetAllCompanyQueryRequest request)
         {
-            var result = await _companyRepository.GetAll().ToListAsync();
+            var result = await _mediator.Send(request);
             return Ok(result);
 
         }

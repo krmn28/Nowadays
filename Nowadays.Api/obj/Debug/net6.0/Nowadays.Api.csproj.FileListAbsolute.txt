@@ -5,6 +5,8 @@
 /workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/Nowadays.Api.runtimeconfig.json
 /workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/Nowadays.Api.dll
 /workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/Nowadays.Api.pdb
+/workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/AutoMapper.dll
+/workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 /workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/Humanizer.dll
 /workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.dll
 /workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll
@@ -37,3 +39,6 @@
 /workspace/Nowadays/Nowadays.Api/obj/Debug/net6.0/Nowadays.Api.pdb
 /workspace/Nowadays/Nowadays.Api/obj/Debug/net6.0/Nowadays.Api.genruntimeconfig.cache
 /workspace/Nowadays/Nowadays.Api/obj/Debug/net6.0/ref/Nowadays.Api.dll
+/workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/MediatR.dll
+/workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/MediatR.Contracts.dll
+/workspace/Nowadays/Nowadays.Api/bin/Debug/net6.0/MediatR.Extensions.Microsoft.DependencyInjection.dll
