@@ -15,8 +15,8 @@ namespace Nowadays.Api.DataAccess.Repositories
         Task AddRangeAsync(IEnumerable<T> entities);
         Task<bool> Update(T entity);
         Task<bool> Delete(T entity);
-        IQueryable<T> GetAll();
-        IQueryable<T> GetWhere(Expression<Func<T, bool>> filter);
-        Task<T> Get(Expression<Func<T, bool>> filter);
+        IQueryable<T> GetAll(bool tracking = true);
+        IQueryable<T> GetWhere(Expression<Func<T, bool>> filter, bool tracking = true);
+        Task<T> Get(Expression<Func<T, bool>> filter, bool tracking = true);
     }
 }

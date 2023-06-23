@@ -1,4 +1,4 @@
-namespace Nowadays.Api.Application.Queries.Companies
+namespace Nowadays.Api.Application.Queries.Companies.GetAllQuery
 {
     public class GetAllCompanyQueryResponse
     {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MBRE43lBK98vxoz9nj9IkUjiGhbMlTcC+2CXo/pDLpomGMwDOUbKh6wR6fzux2RWT4yYk+siA6a2uZq6qt3m+w==",
+  "dgSpecHash": "/hs6lNnqNTjGnHKAbXm8Zyrwz0c6eoImrTG3Wii8nOQMO7Mimv76u52lS/kvtr9VLzM6Fm+RYXzBwIThb8cYcQ==",
   "success": true,
   "projectFilePath": "/workspace/Nowadays/Nowadays.Api/Nowadays.Api.csproj",
   "expectedPackageFiles": [
@@ -36,7 +36,7 @@
     "/home/gitpod/.nuget/packages/system.collections.immutable/6.0.0/system.collections.immutable.6.0.0.nupkg.sha512",
     "/home/gitpod/.nuget/packages/system.diagnostics.diagnosticsource/6.0.0/system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "/home/gitpod/.nuget/packages/system.runtime.compilerservices.unsafe/6.0.0/system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
-    "/home/gitpod/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.18/microsoft.netcore.app.host.linux-x64.6.0.18.nupkg.sha512"
+    "/home/gitpod/.nuget/packages/microsoft.netcore.app.host.linux-x64/6.0.19/microsoft.netcore.app.host.linux-x64.6.0.19.nupkg.sha512"
   ],
   "logs": []
 }

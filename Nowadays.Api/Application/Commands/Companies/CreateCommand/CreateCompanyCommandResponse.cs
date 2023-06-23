@@ -1,4 +1,4 @@
-namespace Nowadays.Api.Application.Commands.Companies
+namespace Nowadays.Api.Application.Commands.Companies.CreateCommand
 {
     public class CreateCompanyCommandResponse
     {

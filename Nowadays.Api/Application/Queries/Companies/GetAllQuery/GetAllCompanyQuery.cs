@@ -9,7 +9,7 @@ using Nowadays.Api.DataAccess.Repositories;
 using Nowadays.Api.DataAccess.Repositories.CompanyRepositories;
 using Nowadays.Api.Entities;
 
-namespace Nowadays.Api.Application.Queries.Companies
+namespace Nowadays.Api.Application.Queries.Companies.GetAllQuery
 {
     public class GetAllCompanyQueryRequest:IRequest<List<GetAllCompanyQueryResponse>>
     {

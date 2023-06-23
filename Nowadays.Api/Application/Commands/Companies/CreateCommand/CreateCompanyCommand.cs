@@ -9,7 +9,7 @@ using Nowadays.Api.DataAccess.Repositories.CompanyRepositories;
 using Nowadays.Api.Entities;
 using Nowadays.Api.VMModels.Companies;
 
-namespace Nowadays.Api.Application.Commands.Companies
+namespace Nowadays.Api.Application.Commands.Companies.CreateCommand
 {
     public  class CreateCompanyCommandRequest : IRequest<CreateCompanyCommandResponse>
     {

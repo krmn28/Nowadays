@@ -40,21 +40,28 @@ namespace Nowadays.Api.DataAccess.Repositories
             });
         }
 
-        public async Task<T> Get(Expression<Func<T, bool>> filter)
+        public async Task<T> Get(Expression<Func<T, bool>> filter, bool tracking)
         {
-            return await Entity?.FirstOrDefaultAsync(filter);
+            var queries = Entity.AsQueryable();
+            if(!tracking)
+                queries = queries.AsNoTracking();
+            return await queries.FirstOrDefaultAsync(filter);
         }
 
-        public IQueryable<T> GetAll()
+        public IQueryable<T> GetAll(bool tracking)
         {
-            return Entity.AsQueryable();
+            var queries = Entity.AsQueryable();
+            if(!tracking)
+                queries = queries.AsNoTracking();
+            return queries;
         }
 
-        public IQueryable<T> GetWhere(Expression<Func<T, bool>> filter)
+        public IQueryable<T> GetWhere(Expression<Func<T, bool>> filter, bool tracking)
         {
-             return filter == null 
-             ? Entity.AsQueryable()
-             : Entity.AsQueryable().Where(filter);      
+             var queries = Entity.Where(filter);
+            if(!tracking)
+                queries = queries.AsNoTracking();
+            return queries;  
         }
 
         public async Task<bool> Update(T entity)
